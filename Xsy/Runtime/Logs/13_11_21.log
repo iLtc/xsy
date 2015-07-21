@@ -1,0 +1,241 @@
+[ 2013-11-21T22:39:09+08:00 ] 127.0.0.1 /2013/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+NOTIC: [8] Undefined variable: Xsy_uid E:\wwwroot\2013\Xsy\Lib\Action\IndexAction.class.php 第 16 行.
+NOTIC: [8] Undefined variable: Xsy_username E:\wwwroot\2013\Xsy\Lib\Action\IndexAction.class.php 第 17 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.028206s ]
+INFO: [ view_template ] --END-- [ RunTime:0.028294s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.044701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044801s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001271s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.007635s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001141s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011165s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001040s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001095s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000585s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.057294s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: kaiguan E:\wwwroot\2013\Xsy\Runtime\Cache\550cf8fae38af25ead8dfcabdae2ca76.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.036813s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.013114s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000066s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000042s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000011s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038799s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.038033s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000578s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.095397s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.002079s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.051212s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000048s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000039s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000011s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042159s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000056s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.041562s ]
+
+[ 2013-11-21T22:39:12+08:00 ] 127.0.0.1 /2013/index.php?m=Uc&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [8] Undefined index: return E:\wwwroot\2013\Xsy\Lib\Action\UcAction.class.php 第 37 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002017s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002097s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.037759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037867s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001115s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001053s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000910s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004252s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001523s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2013-11-21T22:39:20+08:00 ] 127.0.0.1 /2013/index.php?m=Uc&a=login1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] Undefined offset: 0 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 1 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 2 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 3 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 4 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+
+[ 2013-11-21T22:39:33+08:00 ] 127.0.0.1 /2013/index.php?m=Uc&a=login1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] Undefined offset: 0 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 1 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 2 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 3 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+NOTIC: [8] Undefined offset: 4 E:\wwwroot\2013\client\lib\xml.class.php 第 69 行.
+
+[ 2013-11-21T22:39:33+08:00 ] 127.0.0.1 /2013/index.php?m=Uc&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [8] Undefined index: return E:\wwwroot\2013\Xsy\Lib\Action\UcAction.class.php 第 37 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001265s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001401s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008915s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000692s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000651s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000688s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003277s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001191s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2013-11-21T22:39:38+08:00 ] 127.0.0.1 /2013/index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `xsy_baoming` [ RunTime:0.302164s ]
+SQL: SELECT * FROM `xsy_baoming` WHERE ( `uid` = '294940' ) AND ( `guanxi` = '报名人' ) LIMIT 1   [ RunTime:0.048611s ]
+SQL: SELECT * FROM `xsy_baoming` WHERE ( `uid` = '294940' ) AND ( `guanxi` <> '报名人' )  [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `xsy_gonggao` [ RunTime:0.350012s ]
+ERR: 1146:Table 'xsy.xsy_gonggao' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xsy_gonggao`
+SQL: SELECT * FROM `xsy_gonggao` ORDER BY id desc LIMIT 1   [ RunTime:0.003183s ]
+ERR: 1146:Table 'xsy.xsy_gonggao' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xsy_gonggao` ORDER BY id desc LIMIT 1  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000788s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000845s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zt E:\wwwroot\2013\Xsy\Runtime\Cache\a968336665b7a6b8c1727b322a887d23.php 第 41 行.
+NOTIC: [8] Undefined index: zt E:\wwwroot\2013\Xsy\Runtime\Cache\a968336665b7a6b8c1727b322a887d23.php 第 44 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.009162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009236s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000578s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000487s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000269s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001923s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000804s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000378s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.012268s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zt E:\wwwroot\2013\Xsy\Runtime\Cache\550cf8fae38af25ead8dfcabdae2ca76.php 第 50 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.006587s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003487s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000094s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000062s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000016s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008234s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000052s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.007866s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000374s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.020263s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.002408s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.011480s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000069s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000041s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000011s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012038s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php:92) E:\wwwroot\2013\ThinkPHP\Lib\Core\View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.011481s ]
+
+[ 2013-11-21T22:39:40+08:00 ] 127.0.0.1 /2013/index.php?m=Baoming&a=step1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `xsy_info` [ RunTime:0.045747s ]
+SQL: SELECT * FROM `xsy_info` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051059s ]
+SQL: SHOW COLUMNS FROM `xsy_baoming` [ RunTime:0.006332s ]
+SQL: SELECT * FROM `xsy_baoming` WHERE ( `uid` = '294940' ) LIMIT 1   [ RunTime:0.000605s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.030065s ]
+INFO: [ view_template ] --END-- [ RunTime:0.030170s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\wwwroot\2013\Xsy\Runtime\Cache\447278d7ddc51d788c347564aa6c659e.php 第 3 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\wwwroot\2013\Xsy\Runtime\Cache\447278d7ddc51d788c347564aa6c659e.php 第 4 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.026463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026569s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000631s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000528s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000385s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002411s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001192s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2013-11-21T22:40:16+08:00 ] 127.0.0.1 /2013/index.php?m=Baoming&a=step1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+SQL: SHOW COLUMNS FROM `xsy_info` [ RunTime:0.017744s ]
+SQL: SELECT * FROM `xsy_info` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `xsy_baoming` [ RunTime:0.005836s ]
+SQL: SELECT * FROM `xsy_baoming` WHERE ( `uid` = '294940' ) LIMIT 1   [ RunTime:0.000872s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001671s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001769s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\wwwroot\2013\Xsy\Runtime\Cache\447278d7ddc51d788c347564aa6c659e.php 第 3 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\wwwroot\2013\Xsy\Runtime\Cache\447278d7ddc51d788c347564aa6c659e.php 第 4 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014107s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001118s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001020s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000785s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004228s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001460s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001572s ]
+

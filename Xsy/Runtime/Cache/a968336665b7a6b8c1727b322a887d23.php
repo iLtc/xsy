@@ -1,0 +1,64 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class=" widthauto">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk">
+    <title><?php echo ($pub["title"]); ?> -  华南农业大学红满堂社区 -  Powered by Discuz!</title>
+    <base href="http://hometown.scau.edu.cn/bbs/">
+    <link rel="stylesheet" type="text/css" href="data/cache/style_1_common.css?oJp">
+    <link rel="stylesheet" type="text/css" href="data/cache/style_1_forum_viewthread.css?oJp">
+    <link rel="stylesheet" id="css_extstyle" type="text/css" href="./template/default/style/t1/style.css">
+    <script src="static/js/common.js?oJp" type="text/javascript"></script>
+    <link rel="stylesheet" id="css_widthauto" type="text/css" href="data/cache/style_1_widthauto.css?oJp">
+    <script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
+    <script src="static/js/forum.js?oJp" type="text/javascript"></script>
+</head>
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+
+<div id="hd">
+    <div class="wp">
+        <div class="hdc cl">
+            <h2>
+                <a href="./" title="华南农业大学红满堂社区">
+                    <img src="static/image/common/logo.png" alt="华南农业大学红满堂社区" border="0">
+                </a>
+            </h2>
+            <div id="um">
+                <div class="avt y">
+                    <a href="home.php?mod=space&amp;uid=471881">
+                        <img src="http://hometown.scau.edu.cn/bbs/uc_server/images/noavatar_small.gif" onerror="this.onerror=null;this.src='http://hometown.scau.edu.cn/bbs/uc_server/images/noavatar_small.gif'">
+                    </a>
+                </div>
+                <p>
+                    <strong class="vwmy"><a href="home.php?mod=space&amp;uid=471881" target="_blank" title="访问我的空间">罗天成</a></strong>
+                    <span class="pipe">|</span>
+                    <span class="pipe">|</span><a href="member.php?mod=logging&amp;action=logout&amp;formhash=bcaca7ff">退出</a>
+                </p>
+                <p>
+                    <a href="home.php?mod=spacecp&amp;ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this, showUpgradeinfo)">用户组: 红薯小學生</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="nv" style="top: 0px; left: 12.65625px; z-index: 199;">
+            <a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(41);})">快捷导航</a>
+            <ul><li class="a" id="mn_forum"><a href="forum.php" hidefocus="true" title="BBS">论坛<span>BBS</span></a></li><li id="mn_Nd3b9"><a href="http://pt.scau.edu.cn" hidefocus="true" title="红满堂PT站" target="_blank" style="font-weight: bold;">资源下载<span>红满堂PT站</span></a></li><li id="mn_N134e"><a href="http://market.scau.edu.cn" hidefocus="true" target="_blank">二手市场</a></li><li id="mn_N5f3f"><a href="http://hometown.scau.edu.cn/sky" hidefocus="true" target="_blank">天空</a></li><li id="mn_N602c"><a href="http://hometown.scau.edu.cn/history/" hidefocus="true" target="_blank">历史介绍</a></li><li id="mn_N87dc" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})" initialized="true" class=""><a href="#" hidefocus="true" target="_blank">校园助手</a></li><li id="mn_Ne3c3" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"><a href="#" hidefocus="true">娱乐</a></li><li id="mn_Na4c3"><a href="http://hometown.scau.edu.cn/wiki/" hidefocus="true" title="华农百科" target="_blank">华农百科<span>华农百科</span></a></li></ul>
+        </div>
+
+    </div>
+</div>
+
+<div id="wp" class="wp">
+    <div id="pt" class="bm cl">
+        <div class="z">
+            <a href="./" class="nvhm" title="首页">华南农业大学红满堂社区</a><em>»</em><a href="forum.php">论坛</a> <em>›</em> <a href="forum.php?gid=38">论坛事务</a> <em>›</em> <a href="forum.php?mod=forumdisplay&amp;fid=41">论坛测试区</a> <em>›</em> <a href="forum.php?mod=viewthread&amp;tid=665041">null</a>
+        </div>
+    </div>
+
+    <div class="wp">
+        <!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+    </div>
+
+    <div id="ct" class="wp cl">
+
+        <div id="postlist" class="pl bm">
+            <div>

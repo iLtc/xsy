@@ -1,0 +1,74 @@
+[ 2013-10-10T21:41:27+08:00 ] 127.0.0.1 /2013/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004922s ]
+NOTIC: [8] Undefined variable: Xsy_uid E:\wamp\www\2013\Xsy\Lib\Action\IndexAction.class.php 第 16 行.
+NOTIC: [8] Undefined variable: Xsy_username E:\wamp\www\2013\Xsy\Lib\Action\IndexAction.class.php 第 17 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.023473s ]
+INFO: [ view_template ] --END-- [ RunTime:0.023713s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.172911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173297s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.010865s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.004521s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.003650s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.005215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025572s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002103s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002336s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001285s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.202098s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: kaiguan E:\wamp\www\2013\Xsy\Runtime\Cache\550cf8fae38af25ead8dfcabdae2ca76.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.031651s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.030451s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000196s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000144s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.036609s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000133s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.035134s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000768s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.237508s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.027826s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.065065s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000356s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000300s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000083s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.067765s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000352s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.067540s ]
+
+[ 2013-10-10T21:41:38+08:00 ] 127.0.0.1 /2013/index.php?m=Uc&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+NOTIC: [8] Undefined index: return E:\wamp\www\2013\Xsy\Lib\Action\UcAction.class.php 第 37 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.021815s ]
+INFO: [ view_template ] --END-- [ RunTime:0.022138s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015365s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001072s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000969s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000630s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004236s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001336s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001518s ]
+

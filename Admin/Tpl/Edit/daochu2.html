@@ -1,0 +1,44 @@
+<table width="100%%" border="1">
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">报名编号</th>
+    <th scope="col">姓名</th>
+    <th scope="col">性别</th>
+    <th scope="col">新生</th>
+    <th scope="col">手机</th>
+    <th scope="col">短号</th>
+    <th scope="col">QQ</th>
+    <th scope="col">学院</th>
+    <th scope="col">专业</th>
+    <th scope="col">地区</th>
+    <th scope="col">离开时间</th>
+    <th scope="col">关系</th>
+    <th scope="col">备注</th>
+    <th scope="col">TIME</th>
+    <th scope="col">IP</th>
+    <th scope="col">UNAME</th>
+    <th scope="col">UID</th>
+  </tr>
+  <volist name="data" id="vo">
+  <tr>
+    <td>{$vo.id}</td>
+    <td>{$vo.groupid}&nbsp;</td>
+    <td>{$vo.name}&nbsp;</td>
+    <td>{$vo.sex}&nbsp;</td>
+    <td>{$vo.xs}&nbsp;</td>
+    <td>{$vo.mobilNum}&nbsp;</td>
+    <td>{$vo.smobilNum}&nbsp;</td>
+    <td>{$vo.qqNum}&nbsp;</td>
+    <td>{$vo.college}&nbsp;</td>
+    <td>{$vo.zhuanye}&nbsp;</td>
+    <td>{$vo.diqu}&nbsp;</td>
+    <td>{$vo.shijian}&nbsp;</td>
+    <td>{$vo.guanxi}&nbsp;</td>
+    <td>{$vo.beizhu}&nbsp;</td>
+    <td>{$vo.time}&nbsp;</td>
+    <td>{$vo.ip}&nbsp;</td>
+    <td>{$vo.uname}&nbsp;</td>
+    <td>{$vo.uid}&nbsp;</td>
+  </tr>
+  </volist>
+</table>

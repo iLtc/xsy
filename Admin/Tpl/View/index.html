@@ -1,0 +1,41 @@
+<table width="100%" class="table table-bordered table-hover table-condensed" border="1">
+  <tr>
+    <td width="20%"><strong>报名编号：</strong>{$duiwu.groupid}</td>
+    <td width="20%"><strong>ID：</strong><a href="http://hometown.scau.edu.cn/bbs/home.php?mod=space&amp;uid={$duiwu.uid}">{$duiwu.uname}</a></td>
+    <td width="20%"><strong>UID：</strong>{$duiwu.uid}</td>
+    <td width="20%"><strong>地区：</strong>{$duiwu.diqu}</td>
+    <td width="20%"><strong>离开时间：</strong>{$duiwu.shijian}</td>
+  </tr></table>
+<table width="100%%" border="1" class="table table-bordered table-hover table-condensed">
+  <tr>
+    <th width="6%" scope="col" style="text-align: center">姓名</th>
+    <th width="4%" scope="col" style="text-align: center">性别</th>
+    <th width="4%" scope="col" style="text-align: center">新生</th>
+    <th width="8%" scope="col" style="text-align: center">QQ号码</th>
+    <th width="7%" scope="col" style="text-align: center">短号</th>
+    <th width="9%" scope="col" style="text-align: center">手机号码</th>
+    <th width="12%" scope="col" style="text-align: center">学院</th>
+    <th width="14%" scope="col" style="text-align: center">专业</th>
+    <th width="10%" scope="col" style="text-align: center">关系</th>
+    <th width="8%" scope="col" style="text-align: center">得知</th>
+    <th width="14%" scope="col" style="text-align: center">备注</th>
+    <th width="5%" scope="col" style="text-align: center">操作</th>
+  </tr>
+  <volist name="data" id="data">
+  <tr>
+  <td style="text-align: center">&nbsp;{$data.name}</td>
+  <td style="text-align: center">&nbsp;{$data.sex}</td>
+  <td style="text-align: center">&nbsp;{$data.xs}</td>
+  <td style="text-align: center">&nbsp;{$data.qqNum}</td>
+  <td style="text-align: center">&nbsp;{$data.smobilNum}</td>
+  <td style="text-align: center">&nbsp;{$data.mobilNum}</td>
+  <td style="text-align: center">&nbsp;{$data.college}</td>
+  <td style="text-align: center">&nbsp;{$data.zhuanye}</td>
+  <td style="text-align: center">&nbsp;{$data.guanxi}</td>
+  <td style="text-align: center">&nbsp;{$data.dz}</td>
+  <td style="text-align: center">&nbsp;{$data.beizhu}</td>
+  <td style="text-align: center"><if condition="$data.guanxi neq '报名人'"><a class="btn btn-danger btn-small" onclick="confirmD('__APP__?m=Del&a=tb&id={$data.id}&num={$data.mobilNum}','确定要删除这位同伴吗？')">删除</a></if></td>
+  </tr>
+  </volist>
+</table>
+<p style="text-align: right">此组共计&nbsp;{$num}&nbsp;人&nbsp;&nbsp;&nbsp;<a class="btn btn-danger btn-small" onclick="confirmD('__APP__?m=Del&a=z&uname={$duiwu.uname}&uid={$duiwu.uid}','确定要删除这一组吗？')">删除</a></p>
