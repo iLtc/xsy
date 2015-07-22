@@ -1,6 +1,4 @@
 <?php
-include './config.inc.php';
-include './client/client.php';
 class DelAction extends Action {
 	Public function z(){
 		if(!empty($_COOKIE['Xsy_auth'])) {

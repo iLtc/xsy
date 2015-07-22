@@ -1,34 +1,4 @@
 <?php
-//引用Ucenter应用的配置和函数
-include './config.inc.php';
-include './client/client.php';
-//定义随机字段函数
-function genRandomString($len){
-    $chars = array( 
-        "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",  
-       	"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",  
-       	"w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G",  
-		"H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",  
-		"S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2",  
-		"3", "4", "5", "6", "7", "8", "9" 
-    ); 
-    $charsLen = count($chars) - 1; 
-    shuffle($chars);// 将数组打乱
-    $output = ""; 
-    for ($i=0; $i<$len; $i++) {
-		$output .= $chars[mt_rand(0, $charsLen)]; //获得一个数组元素
-	}  
-	return $output;
-}
-//定义防SQL字段检查函数
-function inject_check($sql_str) { 
-	$check=eregi('select|insert|update|delete|\'|\/\*|\*|\.\.\/|\.\/|union|into|load_file|outfile', $sql_str);     // 进行过滤 
-	if($check){ 
-		return 1;
-	}else{ 
-		return 0; 
-	} 
-}
 class BaomingAction extends Action {
 	public function index(){
 		redirect(U('Baoming/step1'), 0);

@@ -1,6 +1,4 @@
 <?php
-include './config.inc.php';
-include './client/client.php';
 class ViewAction extends Action {
 	Public function index(){
 		if(!empty($_COOKIE['Xsy_auth'])) {

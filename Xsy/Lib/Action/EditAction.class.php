@@ -1,16 +1,4 @@
 <?php
-//引用Ucenter应用的配置和函数
-include './config.inc.php';
-include './client/client.php';
-//定义防SQL字段检查函数
-function inject_check($sql_str) { 
-	$check=eregi('select|insert|update|delete|\'|\/\*|\*|\.\.\/|\.\/|union|into|load_file|outfile', $sql_str);     // 进行过滤 
-	if($check){ 
-		return 1;
-	}else{ 
-		return 0; 
-	} 
-}
 class EditAction extends Action {
 	Public function del(){
 		//判断用户是否已登录

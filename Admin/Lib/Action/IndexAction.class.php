@@ -1,7 +1,4 @@
 <?php
-include './config.inc.php';
-include './client/client.php';
-
 class IndexAction extends Action {
     public function index(){
 		//判断用户是否已登录

@@ -90,9 +90,9 @@ function checkqNum(z){
 	}
 }
 function ajaxnum(type,num,div){
-	$("span#"+div).html('<img src="/2013/Public/Image/loading.gif" width="25" height="25">');
+	$("span#"+div).html('<img src="/xsy/Public/Image/loading.gif" width="25" height="25">');
 	$("div#"+div).removeClass('success').removeClass('error').addClass('info');
-		$.get('/2013/index.php?m=Baoming&a=check',{type:type,num:num},function(data){
+		$.get('/xsy/index.php?m=Baoming&a=check',{type:type,num:num},function(data){
 			if(data.status<0){
 				if(type=='mobile'){
 					numback=1;
@@ -330,7 +330,7 @@ function check(a){
 			}else{
 				var dq = $("select#diqu").find("option:selected").text()
 			}
-			$.post('/2013/index.php?m=Baoming&a=step2',{
+			$.post('/xsy/index.php?m=Baoming&a=step2',{
 				name:$("input#name").val(),
 				sex:$(":radio[name='sex']:checked").val(),
 				mobilNum:$("input#mobilNum").val(),
@@ -357,7 +357,7 @@ function check(a){
 				
 			})
 		}else{
-			$.post('/2013/index.php?m=Baoming&a=step4',{
+			$.post('/xsy/index.php?m=Baoming&a=step4',{
 				name:$("input#name").val(),
 				sex:$(":radio[name='sex']:checked").val(),
 				mobilNum:$("input#mobilNum").val(),

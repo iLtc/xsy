@@ -1,8 +1,4 @@
 <?php
-//引用Ucenter应用的配置和函数
-include './config.inc.php';
-include './client/client.php';
-
 class IndexAction extends Action {
 	public function index(){
 		//通过检查cookie判断是否登陆

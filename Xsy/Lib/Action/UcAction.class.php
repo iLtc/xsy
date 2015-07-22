@@ -1,46 +1,89 @@
 <?php
-//引用Ucenter应用的配置和函数
-include './config.inc.php';
-include './client/client.php';
 class UcAction extends Action {
-	public function index(){
-		redirect(U('/Uc/login'), 0);
-    }
-	public function login1(){
-		if(!$this->isPost()){
-			$this->ajaxReturn(-5,"非法请求",-5);
-		}else{
-			if($_POST['username']=='' | $_POST['password']=='')
-			{
-				$this->ajaxReturn(-1,"参数错误",-1);
+	function __construct(){
+		parent::__construct();
 
-			}
-            //通过接口判断登录帐号的正确性，返回值为数组
-			list($uid, $username, $password, $email) = uc_user_login($_POST['username'], $_POST['password'],0);
-			cookie('Xsy_auth', '');
-			if($uid > 0) {
-				//用户登陆成功，设置 Cookie，加密直接用 uc_authcode 函数
-				cookie('Xsy_auth', uc_authcode($uid."\t".$username, 'ENCODE'));
-				//生成同步登录的代码
-				$this->ajaxReturn($uid,"登录成功",$uid);
-			} elseif($uid == -1) {
-				$this->ajaxReturn(-2,"用户不存在，或者被删除",-2);
-			} elseif($uid == -2) {
-				$this->ajaxReturn(-3,"密码错误",-3);
-			} else {
-				$this->ajaxReturn(-4,"未知错误",-4);
+		$this->client_id = 14;
+		$this->client_secret = '2HQfOn7iRiFOhMJ4sfIv7x8A1XmIH387';
+		$this->redirect_uri = 'http://localhost'.__APP__.'?m=Uc&a=callback';
+	}
+
+	public function login(){
+		$state = md5(rand(1000000, 9999999));
+		session('OAuthState', $state);
+
+		$query = array(
+			'client_id' => $this->client_id,
+			'response_type' => 'code',
+			'state' => $state,
+			'redirect_uri' => $this->redirect_uri
+		);
+
+		$url = 'http://hometown.scau.edu.cn/open/OAuth/authorize'.'?'.http_build_query($query);
+
+		redirect($url);
+	}
+
+	public function callback(){
+		if(I('error')){
+			echo '登录失败! <a href="'.__APP__.'?m=Uc&a=login">重试</a>';
+
+		}else {
+			$state = I('state');
+			if ($state != session('OAuthState')) {
+				echo '非法请求! <a href="'.__APP__.'?m=Uc&a=login">重试</a>';
+				session('OAuthState', null);
+
+			}else{
+				session('OAuthState', null);
+
+				$query = array(
+					'client_id' => $this->client_id,
+					'client_secret' => $this->client_secret,
+					'grant_type' => 'authorization_code',
+					'code' => I('code'),
+					'redirect_uri' => $this->redirect_uri
+				);
+
+				$ret = $this->_post('http://hometown.scau.edu.cn/open/OAuth/access_token', http_build_query($query));
+				$retArray = json_decode($ret, true);
+
+				$url = 'http://hometown.scau.edu.cn/bbs/plugin.php?id=iltc_open:userinfo&uid='.$retArray['uid'];
+				$ret = file_get_contents($url);
+
+				$retArray1 = json_decode($ret, true);
+
+				$username = $retArray1['data']['username'];
+				$uid = $retArray['uid'];
+
+				if(empty($username) || empty($uid)) {
+					echo '无法获取用户信息! <a href="'.__APP__.'?m=Uc&a=login">重试</a>';
+				}else {
+					cookie('Xsy_auth', uc_authcode($uid."\t".$username, 'ENCODE'));
+					$this->redirect('Index/index');
+				}
+
 			}
 		}
 	}
-	public function login(){
-			//登录表单
-			$this->assign('return',$_GET['return']);
-			$this->display();
-	}
+
 	public function logout(){
-		cookie('Xsy_auth', 'logout',-3600);
-		//生成同步退出的代码
-		echo uc_user_synlogout();
-		$this -> success(退出成功,U('Index/index'));
+		cookie('Xsy_auth', null);
+		$this->redirect('Index/index');
+	}
+
+	private function _post($url, $post){
+		$ch = curl_init();//初始化curl
+
+		curl_setopt($ch,CURLOPT_URL, $url);//抓取指定网页
+		curl_setopt($ch, CURLOPT_HEADER, 0);//设置header
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出到屏幕上
+		curl_setopt($ch, CURLOPT_POST, 1);//post提交方式
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);//关闭SSL验证
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $post);//POST数据
+		$data = curl_exec($ch);//运行curl
+		curl_close($ch);
+
+		return $data;
 	}
 }

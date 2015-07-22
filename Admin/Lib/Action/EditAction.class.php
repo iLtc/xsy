@@ -1,6 +1,4 @@
 <?php
-include './config.inc.php';
-include './client/client.php';
 //定义数据库导出函数
 function exportexcel($data=array(),$title=array(),$filename='report'){
     header("Content-type:application/octet-stream");
@@ -119,7 +117,7 @@ class EditAction extends Action {
 		if($m->where($parameter)->save($data)){
 			$this->redirect('Edit/a');
 		}else{
-			$this->error(状态修改失败，请重试);
+			$this->error('状态修改失败，请重试');
 		}
 	}
 	Public function zt(){
@@ -274,7 +272,7 @@ class EditAction extends Action {
 		if($m->where($where1)->delete()){
 			$this->redirect('Edit/admin');
 		}else{
-			$this->error(删除管理员失败，请重试);
+			$this->error('删除管理员失败，请重试');
 		}
 	}
 	public function csh(){

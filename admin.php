@@ -1,6 +1,6 @@
 ﻿<?php
     //开启调试模式
-    //define('APP_DEBUG', true);
+    define('APP_DEBUG', true);
     //应用名称
     define('APP_NAME','Admin');
     //应用目录
