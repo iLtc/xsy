@@ -330,4 +330,23 @@ class BaomingAction extends Action {
 		}
 		
 	}
+
+	public function college(){
+		$data = D('info')->where('name = "major"')->getField('class');
+		$data = json_decode($data, true);
+
+		$arr = array();
+		foreach($data as $i=>$v) $arr[] = $i;
+
+		echo json_encode($arr);
+	}
+
+	public function major(){
+		$data = D('info')->where('name = "major"')->getField('class');
+		$data = json_decode($data, true);
+
+		$college = I('college');
+
+		echo json_encode($data[$college]);
+	}
 }

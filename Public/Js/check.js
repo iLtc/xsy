@@ -133,50 +133,50 @@ function ajaxnum(type,num,div){
 function checkxsT(){
 	xs="T";	
 	if($("select#college").find("option:selected").text() == '请选择'){
-		$("span#college").html('新生必选，13级点击<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">这里</a>查询');
+		$("span#college").html('新生必选，新生点击<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">这里</a>查询');
 		$("div#college").removeClass('success').removeClass('error').addClass('info');
 	}
 	if($("select#zhuanye").find("option:selected").text() == '请选择'){
-		$("span#zhuanye").html('新生必选，13级点击<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">这里</a>查询');
+		$("span#zhuanye").html('新生必选，新生点击<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">这里</a>查询');
 		$("div#zhuanye").removeClass('success').removeClass('error').addClass('info');
 	}
 	if($("select#college").find("option:selected").text() == '非华农人'){
-		$("span#college").html('新生必选，13级点击<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">这里</a>查询');
+		$("span#college").html('新生必选，新生点击<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">这里</a>查询');
 		$("div#college").removeClass('success').removeClass('info').addClass('error');
 	}
 	if($("select#zhuanye").find("option:selected").text() == '非华农人'){
-		$("span#zhuanye").html('新生必选，13级点击<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">这里</a>查询');
+		$("span#zhuanye").html('新生必选，新生点击<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">这里</a>查询');
 		$("div#zhuanye").removeClass('success').removeClass('info').addClass('error');
 	}
 }
 function checkxsF(){
 	xs="F";
 	if($("select#college").find("option:selected").text() == '请选择' || $("select#college").find("option:selected").text() == '非华农人'){
-		$("span#college").html('(新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>)');
+		$("span#college").html('(新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>)');
 		$("div#college").removeClass('success').removeClass('error').removeClass('info');
 	}
 	if($("select#zhuanye").find("option:selected").text() == '请选择' || $("select#zhuanye").find("option:selected").text() == '非华农人'){
-		$("span#zhuanye").html('(新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>)');
+		$("span#zhuanye").html('(新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>)');
 		$("div#zhuanye").removeClass('success').removeClass('error').removeClass('info');
 	}
 }
 function checkcol(jc,bt){
 	if(jc !== 1){
-		zhuanye()
+		major();
 	}
 	if($("select#college").find("option:selected").text() == '请选择'){
 		if(xs=='T' || bt==2){
-			$("span#college").html('新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>');
+			$("span#college").html('新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>');
 			$("div#college").removeClass('success').removeClass('info').addClass('error');
 			return 1;
 		}else{
-			$("span#college").html('(新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>)');
+			$("span#college").html('(新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>)');
 			$("div#college").removeClass('success').removeClass('info').removeClass('error');
 			return 0;
 		}
 	}else{
 		if($("select#college").find("option:selected").text() == '非华农人' && xs=='T'){
-			$("span#college").html('新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>');
+			$("span#college").html('新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>');
 			$("div#college").removeClass('success').removeClass('info').addClass('error');
 			return 1;
 		}else{
@@ -189,17 +189,17 @@ function checkcol(jc,bt){
 function checkzy(bt){
 	if($("select#zhuanye").find("option:selected").text() == '请选择'){
 		if(xs=='T' || bt==2){
-			$("span#zhuanye").html('新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>');
+			$("span#zhuanye").html('新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>');
 			$("div#zhuanye").removeClass('success').removeClass('info').addClass('error');
 			return 1;
 		}else{
-			$("span#zhuanye").html('(新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>)');
+			$("span#zhuanye").html('(新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>)');
 			$("div#zhuanye").removeClass('success').removeClass('info').removeClass('error');
 			return 0;
 		}
 	}else{
 		if($("select#zhuanye").find("option:selected").text() == '非华农人' && xs=='T'){
-			$("span#zhuanye").html('新生及在校生必选，13级<a href="http://zsb.scau.edu.cn/wenzi/2013pglqcx.htm" target="new">查询</a>');
+			$("span#zhuanye").html('新生及在校生必选，新生<a href="http://zsb.scau.edu.cn/zkxx/Article-3919.aspx" target="new">查询</a>');
 			$("div#zhuanye").removeClass('success').removeClass('info').addClass('error');
 			return 1;
 		}else{
