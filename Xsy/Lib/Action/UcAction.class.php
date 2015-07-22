@@ -5,7 +5,7 @@ class UcAction extends Action {
 
 		$this->client_id = 14;
 		$this->client_secret = '2HQfOn7iRiFOhMJ4sfIv7x8A1XmIH387';
-		$this->redirect_uri = 'http://localhost'.__APP__.'?m=Uc&a=callback';
+		$this->redirect_uri = 'http://'.$_SERVER['SERVER_NAME'].__APP__.'?m=Uc&a=callback';
 	}
 
 	public function login(){
